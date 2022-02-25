@@ -1,0 +1,79 @@
+@import '../../styles/variables';
+
+.tip-selector {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 2rem 0;
+
+    &__tips {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    &__button {
+        color: white;
+        background-color: $very-dark-cyan;
+
+        &--selected {
+            color: $very-dark-cyan;
+            background-color: $strong-cyan;
+        }
+    }
+
+    &__custom-tip, &__custom-tip--selected, &__custom-tip--error {
+        display: flex;
+        gap: 1rem;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        background-color: $light-grayish-cyan-2;
+        cursor: text;
+
+        &:focus-within, &--selected {
+            outline: 2px $strong-cyan solid;
+        }
+
+        &:hover {
+            filter: brightness(.95);
+        }
+
+        &--error {
+            outline: 2px $error-color solid !important;
+        }
+    }
+
+    &__error {
+        margin: 1rem 0 0 0;
+        color: $error-color;
+        font-weight: 700;
+        align-self: flex-end;
+    }
+
+    input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 24px;
+        width: 100%;
+        font-weight: 700;
+        color: $very-dark-cyan;
+        text-align: center; 
+
+        &::placeholder {
+            color: $dark-grayish-cyan;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .tip-selector {
+        width: 30rem;
+
+        &__tips {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+        }
+    }
+}

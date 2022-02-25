@@ -1,0 +1,71 @@
+@import '../../styles/variables';
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    background-color: $very-dark-cyan;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    
+    &__tip-amount, &__total {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.2rem;
+    }
+
+    &__info-amount {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $strong-cyan;
+    }
+
+    &__info-title {
+        font-weight: 700;
+        width: fit-content;
+
+        p {
+            margin: 0;
+            color: white;
+        }
+
+        small {
+            color: $dark-grayish-cyan-2;
+        }
+    }
+
+    &__reset-button {
+        font-size: 1.2rem;
+        color: $very-dark-cyan;
+        background-color: $strong-cyan;
+
+        &--disabled {
+            opacity: 30%;
+            cursor: not-allowed;
+            
+            &:hover {
+                margin-top: auto;
+                transition: none;
+                transform: none;
+                filter: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .resume {
+        width: 23rem;
+        margin: 0;
+        gap: 1rem;
+
+        &__info-amount {
+            font-size: 3rem;
+        }
+        
+        &__reset-button, &__reset-button--disabled {
+            margin-top: auto;
+        }
+    }
+}

@@ -1,0 +1,92 @@
+@import '../../styles/variables';
+
+.calculator {
+    width: calc(375px - 4rem);
+    background-color: white;
+    border-radius: 1.5rem 1.5rem 0 0;
+    padding: 2rem;
+
+    &__header {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+
+        h1, p { margin: 0 }
+    }
+
+    &__error {
+        color: $error-color;
+        font-weight: 700;
+    }
+
+    &__bill, &__people {
+        color: $very-dark-cyan;
+        cursor: text;
+    }
+
+    &__input, &__input--error {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        background-color: $light-grayish-cyan-2;
+        font-size: 24px;
+
+        &:hover {
+            filter: brightness(.95);
+        }
+        
+        &:focus-within {
+            outline: 2px $strong-cyan solid;
+        }
+
+        svg {
+            width: 20px;
+        }
+
+        &--error {
+            outline: 2px $error-color solid;
+        }
+
+        input {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            font-size: 24px;
+            width: 100%;
+            font-weight: 700;
+            color: $very-dark-cyan;
+            text-align: end;
+
+            &::placeholder {
+                color: $dark-grayish-cyan-2;
+            }
+        }
+    }
+
+    &__wrapper {
+        margin: 0 .5rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .calculator {
+        width: min-content;
+        display: flex;
+        gap: 2rem;
+        border-radius: 1.5rem;
+
+        &__wrapper {
+            margin: .5rem;
+        }
+
+        &__header {
+            align-items: center;
+            flex-direction: row;
+        }
+    }
+}
+    
