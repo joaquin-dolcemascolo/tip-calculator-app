@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.c4318bd2.css",
-    "main.js": "/static/js/main.f743f9cb.js",
-    "static/js/787.ec17bcfd.chunk.js": "/static/js/787.ec17bcfd.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.3cc0528bd46321d63d85702006069614.svg",
-    "static/media/icon-dollar.svg": "/static/media/icon-dollar.9f9be3534a9295a6595764d63a7bf3a3.svg",
-    "static/media/icon-person.svg": "/static/media/icon-person.65bfd20465dd1d2cb58c0b53e1160442.svg",
-    "index.html": "/index.html",
-    "main.c4318bd2.css.map": "/static/css/main.c4318bd2.css.map",
-    "main.f743f9cb.js.map": "/static/js/main.f743f9cb.js.map",
-    "787.ec17bcfd.chunk.js.map": "/static/js/787.ec17bcfd.chunk.js.map"
+    "main.css": "/tip-calculator-app/static/css/main.c4318bd2.css",
+    "main.js": "/tip-calculator-app/static/js/main.2bc2bdae.js",
+    "static/js/787.ec17bcfd.chunk.js": "/tip-calculator-app/static/js/787.ec17bcfd.chunk.js",
+    "static/media/logo.svg": "/tip-calculator-app/static/media/logo.3cc0528bd46321d63d85702006069614.svg",
+    "static/media/icon-dollar.svg": "/tip-calculator-app/static/media/icon-dollar.9f9be3534a9295a6595764d63a7bf3a3.svg",
+    "static/media/icon-person.svg": "/tip-calculator-app/static/media/icon-person.65bfd20465dd1d2cb58c0b53e1160442.svg",
+    "index.html": "/tip-calculator-app/index.html",
+    "main.c4318bd2.css.map": "/tip-calculator-app/static/css/main.c4318bd2.css.map",
+    "main.2bc2bdae.js.map": "/tip-calculator-app/static/js/main.2bc2bdae.js.map",
+    "787.ec17bcfd.chunk.js.map": "/tip-calculator-app/static/js/787.ec17bcfd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c4318bd2.css",
-    "static/js/main.f743f9cb.js"
+    "static/js/main.2bc2bdae.js"
   ]
 }
